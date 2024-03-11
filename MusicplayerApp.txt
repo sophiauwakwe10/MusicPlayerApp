@@ -1,0 +1,28 @@
+This code is a simple console-based music player written in C#. It allows users to manage a playlist by adding songs, removing songs, displaying the playlist, playing songs, shuffling the playlist, and sorting the playlist.
+
+Here's a breakdown of how the code works:
+
+1. *Classes:*
+   - Song: Represents a song with properties like Title, Artist, and FilePath. It also overrides the ToString method to provide a string representation of the song.
+   - MusicPlayer: Manages the playlist operations such as adding songs, removing songs, displaying the playlist, playing songs, shuffling the playlist, and sorting the playlist.
+   - Program: Contains the Main method where the user interacts with the music player through a console interface.
+
+2. *Main Method:*
+   - The Main method creates an instance of MusicPlayer.
+   - It then enters a while loop, prompting the user to select an option (add song, remove song, display playlist, play song, shuffle playlist, sort playlist, or exit).
+   - Based on the user's choice, it executes the corresponding method in the MusicPlayer class.
+
+3. *Switch Case:*
+   - Each case in the switch statement corresponds to a user choice.
+   - For example, case "1" prompts the user to enter details of a new song and adds it to the playlist using the AddSong method of the MusicPlayer class.
+   - Similarly, case "2" prompts the user to enter the index of the song to remove and removes it from the playlist using the RemoveSong method.
+
+4. **Methods in MusicPlayer:**
+   - AddSong: Adds a new song to the playlist.
+   - RemoveSong: Removes a song from the playlist based on its index.
+   - DisplayPlaylist: Displays the current playlist.
+   - PlaySong: Plays a song from the playlist based on its index.
+   - ShufflePlaylist: Shuffles the songs in the playlist.
+   - SortPlaylist: Sorts the songs in the playlist alphabetically by title.
+
+Overall, this code provides a basic framework for managing a playlist of songs via a console interface in C#.
